@@ -13,12 +13,15 @@ pip freeze (shows install libs)
 
     gitignore.io  > Django
     git command shell
+    
     source env001/Scripts/activate 
+
     django-admin startproject carzone .  (nore dot avoid multiple file)
     python manage.py startapp pages
     python manage.py runserver
 
     http://127.0.0.1:8000/
+    http://127.0.0.1:8000/pages/home/
     
 
 
