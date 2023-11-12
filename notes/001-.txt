@@ -19,9 +19,22 @@ pip freeze (shows install libs)
     django-admin startproject carzone .  (nore dot avoid multiple file)
     python manage.py startapp pages
     python manage.py runserver
+    python manage.py --help
+    python manage.py collectstatic
+
+    href='{% static "/pages/css/bootstrap.min.css" %}'>
+    <script src='{% static "pages/js/jquery-2.2.0.min.js" %}'></script>
+
 
     http://127.0.0.1:8000/
     http://127.0.0.1:8000/pages/home/
+
+   
+    <!-- 
+    reference
+    <a href='{% static "pages/img/car/car-2.jpg" class="hidden"  %}' >
+    <img class="hidden" src='{% static "pages/img/car/car-2.jpg" %}' >
+    -->
     
 
 
