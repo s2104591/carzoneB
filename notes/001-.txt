@@ -35,6 +35,7 @@ pip freeze (shows install libs)
     <a href='{% static "pages/img/car/car-2.jpg" class="hidden"  %}' >
     <img class="hidden" src='{% static "pages/img/car/car-2.jpg" %}' >
     -->
+    = '{% static        %}'>
     
 
 
