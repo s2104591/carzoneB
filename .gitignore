@@ -181,4 +181,7 @@ media/
 /carhouse
 /img
 
+*.class
+
+
 
