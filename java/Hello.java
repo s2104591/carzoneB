@@ -29,12 +29,15 @@ public class Hello {
     private static void developFile(ArrayList<String> array){
         int sz= array.size();
 
+    
         printline("develop file, size="+sz);
-        String filePath="edit.txt";
+        String filePath="home2.html";
         int linecount=1;
         int changecount=0;
 
-        String part3a=  "", part3b="";
+        String  part1="",part2="", part3a=  "", part3b="", part4="",part5="", part6="  ..edited";
+        part6="";
+
 
  
         // Writing to the file and handling exceptions
@@ -58,15 +61,17 @@ public class Hello {
 
                     if ( whyindex>1) {
 
-                        printline(linecount+"="+line.strip() );
+                        printline("");
+                        printline(linecount+", befoe="+line.strip() );
+                        
 
                         int len=line.length();
 
-                        String part1= line.substring(0,equalindex+1);
-                        String part2= "  '{%   ";
+                        part1= line.substring(0,equalindex+1);
+                        part2= "  '{%  static  ";
                         
                         if (pageindex<1){
-                            part3a=  "pages/";
+                            part3a=  " \"pages/";
                             part3b=  line.substring(equalindex+2, classindex);
                         }
                         else{
@@ -76,10 +81,10 @@ public class Hello {
                         }
 
 
-                        String part4= " %}'  ";  
-                        String part5= line.substring(classindex+0, len);
+                        part4= " %}'  ";  
+                        part5= line.substring(classindex+0, len);
 
-                        line=  part1+part2 +part3a+ part3b+  part4+ part5  ;
+                        line=  part1+part2 +part3a+ part3b+  part4+ part5 + part6  ;
                         printline("change="+line.strip());
                         changecount++;
                     }
@@ -118,7 +123,7 @@ public class Hello {
     // ****************************************************************************
     private static ArrayList<String>  readFile(){
 
-         String filePath = "home.txt";
+         String filePath = "home.html";
          ArrayList<String> array = new ArrayList<>();   
 
 
